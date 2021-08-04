@@ -1,0 +1,28 @@
+#main{
+    height: 400px;
+    width: 600px;
+    background-color: aqua;
+    border: 1px solid #000000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#word{
+    background-color:blueviolet;
+    float: none;
+    display:none;
+    padding-top: 5;
+}
+#music{
+    background-color:blue;
+    width: 600px;
+    height: 60px;
+}
+#m{
+    position: absolute;
+    right: 1;
+    top: 1;
+}

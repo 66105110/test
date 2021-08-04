@@ -1,28 +1,17 @@
 <html>
     <head>
         <title>ToLMY</title>
+        <link rel="stylesheet" type="text/css" href="lmy.css" />
     </head>
     <body>
-        <audio src="16k.wav" controls="controls" loop="loop" id="music">音频播放失败</audio>
-        <div style="display:none" id="word">
-            <p id="w">刮风这天，我试过握着你手，但偏偏风渐渐大到我看你不见。</p>
+        <div id="main">
+            <div  id="music">
+                <audio src="16k.wav" controls="controls" loop="loop" id="m">音频播放失败</audio>
+            </div>
+            <div id="word">
+                <p id="w">刮风这天，我试过握着你手，但偏偏风渐渐大到我看你不见。</p>
+                <script src="lmy.js" type="text/javascript"></script>
+            </div>
         </div>
-        <style>
-            #music{
-                /* height: auto; */
-                /* width: 600px; */
-                float: right;
-            }
-        </style>
-        <script>
-            var i = 0;
-            var count = document.getElementById("word").innerText;
-            function f(){
-                document.getElementById("w").innerText = count.substring(0,i);
-                document.getElementById("word").style.display="inline";
-                i++;
-            }
-            setInterval(f,200);
-        </script>
     </body>
 </html>
